@@ -1,0 +1,25 @@
+#imageAPane{
+	-fx-background-image:url("../images/onoff_logo.gif");
+		-fx-background-position : center; 
+		-fx-background-repeat:no-repeat;
+	}
+#onOffAPane{
+	-fx-background-image:url("../images/phone_onoff.gif");
+		-fx-background-position : center; 
+		-fx-background-repeat:no-repeat;
+	}
+VBox:hover{
+	-fx-cursor:hand;
+	-fx-font-weight:bold;
+}
+ImageView:hover{
+	-fx-cursor:hand;
+}
+Button:hover{
+	-fx-cursor:hand;
+	-fx-background-color:#98FB98;
+	-fx-border-color:#2E8B57;
+	-fx-background-radius:10.0;
+	-fx-border-radius:10.0;
+	-fx-effect:dropshadow(three-pass-box, #52E252, 3,0.5,2,2)
+}
