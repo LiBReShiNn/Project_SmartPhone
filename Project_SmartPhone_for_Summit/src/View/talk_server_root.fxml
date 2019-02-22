@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="115.0" prefWidth="154.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TalkServerRootController">
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+   <children>
+      <VBox prefHeight="369.0" prefWidth="614.0" spacing="13.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="501.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="253.0" text="VaTalk Server" textFill="#ff94edda">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <MenuBar blendMode="GREEN" prefHeight="62.0" prefWidth="837.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="관리">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="접속자" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="설정">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="설정" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="13.95" surfaceScale="0.0">
+                     <bumpInput>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant color="#b832328b" />
+                           </light>
+                        </Lighting>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#ffe6e6" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </MenuBar>
+            <TextArea fx:id="textArea" prefHeight="488.0" prefWidth="1064.0" style="-fx-border-color: pink;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <HBox alignment="CENTER" blendMode="GREEN" prefHeight="67.0" prefWidth="837.0">
+               <children>
+                  <Button fx:id="btnStartStop" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="1070.0" text="Start" textOverrun="CLIP">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

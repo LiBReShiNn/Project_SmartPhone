@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="241.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <children>
+      <AnchorPane fx:id="findIdAPane" layoutX="2.0" layoutY="2.0" prefHeight="405.0" prefWidth="390.0" style="-fx-background-color: #FFDCFF;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="140.0" prefWidth="140.0">
+               <children>
+                  <ImageView fx:id="dialAddPhnoImgV" fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/27.%20친구/친구%2002.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <TextField fx:id="dialAddPhnoTfName" layoutX="158.0" layoutY="20.0" prefHeight="44.0" prefWidth="215.0" promptText="이름을 입력하세요" style="-fx-background-color: #FFDCFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #CD1039; -fx-text-fill: #000000;" />
+            <Button fx:id="dialAddPhnoExit" contentDisplay="CENTER" layoutX="158.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #CD1039; -fx-background-radius: 10;" styleClass=".textWhite" textFill="#b2b2b2">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/31.%20back/back_arrow02.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="dialAddPhnoAdd" layoutX="280.0" layoutY="166.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" style="-fx-border-radius: 10; -fx-border-color: #CD1039; -fx-background-color: #FFDCFF;" styleClass=".textWhite" text="등  록">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="dialAddPhnoTfeMail" layoutX="158.0" layoutY="68.0" prefHeight="44.0" prefWidth="215.0" promptText="abcdef1234@xxxxx.ooo" style="-fx-background-color: #FFDCFF; -fx-border-color: #CD1039; -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: #000000;" />
+            <TextField fx:id="dialAddPhnoTf" layoutX="158.0" layoutY="116.0" prefHeight="44.0" prefWidth="215.0" promptText="010-0000-0000" style="-fx-background-color: #FFDCFF; -fx-background-radius: 10; -fx-border-color: #CD1039; -fx-border-radius: 10; -fx-text-fill: #000000;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

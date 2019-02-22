@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="390.0" style="-fx-background-radius: 60; -fx-background-color: #3CA0FF; -fx-border-radius: 60;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CalculatorController">
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="55.0" prefHeight="690.0" prefWidth="381.0" style="-fx-background-color: #323232;">
+         <children>
+            <Button fx:id="scsBtnWifi" layoutX="134.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/25.%20wifi/wifi%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnVolume" layoutX="185.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/21.%20volume/volume%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnMemo" layoutX="236.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/17.%20scratch%20pad/scrach%20pad%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnCamera" layoutX="285.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/8.%20camera/Camera%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnMusic" layoutX="332.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/14.%20music/music%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane layoutY="41.0" prefHeight="617.0" prefWidth="381.0" style="-fx-background-color: #828282;">
+               <children>
+                  <Label fx:id="fssLblTime" alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" prefHeight="27.0" prefWidth="72.0" text="00:00:00" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ProgressBar fx:id="fssProgBarBattery" layoutX="269.0" layoutY="5.0" prefHeight="18.0" prefWidth="37.0" progress="0.0" />
+                  <ImageView fx:id="fssIVStateMessage" fitHeight="18.0" fitWidth="22.0" layoutX="207.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/12.%20mail/mail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssIVStateAlret" fitHeight="18.0" fitWidth="18.0" layoutX="180.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/error/9.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssIVStateVolMuVal" fitHeight="20.0" fitWidth="20.0" layoutX="118.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/22.%20Mute/mute.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssIVStateChat" fitHeight="20.0" fitWidth="20.0" layoutX="149.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/13.%20message,%20문자%20모아보기,chatting/message.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="fssLblStateAgency" layoutX="3.0" layoutY="6.0" text="SKT" textFill="WHITE" />
+                  <Label fx:id="fssLblStateBattery" layoutX="233.0" layoutY="7.0" text="100" textAlignment="RIGHT" textFill="WHITE" />
+                  <Label layoutX="258.0" layoutY="7.0" text="\%" textFill="WHITE" />
+                  <AnchorPane fx:id="imageAPane" layoutY="28.0" prefHeight="589.0" prefWidth="381.0" style="-fx-background-color: #C0FFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+                     <children>
+                        <ImageView fx:id="fmsIVHome" fitHeight="26.0" fitWidth="26.0" layoutX="178.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/32.%20O/home02.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="fmsIVAllApps" fitHeight="37.0" fitWidth="30.0" layoutX="298.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/33.%20apps/apps02.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="fmsIVBack" fitHeight="27.0" fitWidth="27.0" layoutX="56.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/31.%20back/back02.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="1.0" layoutY="255.0" prefHeight="265.0" prefWidth="381.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="97.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="dialBtnNo7" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="7" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo8" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="8" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo9" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="9" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnPlus" mnemonicParsing="false" prefHeight="0.0" prefWidth="70.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #FFFFFF;" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="fmsIVBack3" fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/6.%20calculator/plus.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="97.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="dialBtnNo4" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="4" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo5" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="5" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo6" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="6" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnMinus" mnemonicParsing="false" prefHeight="0.0" prefWidth="70.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #FFFFFF;" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="fmsIVBack11" fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/6.%20calculator/minus.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="66.0" prefWidth="322.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="dialBtnNo1" mnemonicParsing="false" prefHeight="56.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="1" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo2" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="2" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo3" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="3" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnCross" mnemonicParsing="false" prefHeight="56.0" prefWidth="70.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #FFFFFF;" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="fmsIVBack1" fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/6.%20calculator/cross.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="97.0" spacing="20.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="dialBtnClear" mnemonicParsing="false" prefHeight="56.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="C" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnNo0" mnemonicParsing="false" prefHeight="0.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnResult" mnemonicParsing="false" prefHeight="56.0" prefWidth="60.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" text="=" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="dialBtnDivide" mnemonicParsing="false" prefHeight="56.0" prefWidth="70.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #FFFFFF;" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="fmsIVBack111" fitHeight="38.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/6.%20calculator/divide.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator layoutX="23.0" layoutY="225.0" prefHeight="0.0" prefWidth="337.0" />
+                        <Label fx:id="dialLblPutNum" alignment="BOTTOM_RIGHT" layoutX="40.0" layoutY="103.0" prefHeight="108.0" prefWidth="302.0" text="0">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                        <Button fx:id="dialBtnBackSpace" layoutX="280.0" layoutY="14.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="54.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #37C3C3;" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="fmsIVBack112" fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/31.%20back/back_arrow02.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <RadioButton layoutX="20.0" layoutY="13.0" mnemonicParsing="false" />
+            <Label layoutX="164.0" layoutY="661.0" text="HG" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/29.%20HG%20Logo/HG.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

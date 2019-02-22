@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="390.0" style="-fx-background-radius: 60; -fx-background-color: #FFE65A; -fx-border-radius: 60;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TalkProFriRootController">
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="55.0" prefHeight="690.0" prefWidth="381.0" style="-fx-background-color: #323232;">
+         <children>
+            <AnchorPane layoutY="41.0" prefHeight="617.0" prefWidth="381.0" style="-fx-background-color: #828282;">
+               <children>
+                  <Label fx:id="fssLblTime" alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" prefHeight="27.0" prefWidth="72.0" text="00:00:00" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ProgressBar fx:id="fssProgBarBattery" layoutX="269.0" layoutY="5.0" prefHeight="18.0" prefWidth="37.0" progress="0.0" />
+                  <ImageView fx:id="fssLblStateMessage" fitHeight="18.0" fitWidth="22.0" layoutX="207.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/12.%20mail/mail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssLblStateAlret" fitHeight="18.0" fitWidth="18.0" layoutX="180.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/error/9.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssLblStateVolMuVal" fitHeight="20.0" fitWidth="20.0" layoutX="118.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/22.%20Mute/mute.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssLblStateChat" fitHeight="20.0" fitWidth="20.0" layoutX="149.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/13.%20message,%20문자%20모아보기,chatting/message.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="3.0" layoutY="6.0" text="SKT" textFill="WHITE" />
+                  <Label fx:id="fssLblBattery" layoutX="233.0" layoutY="7.0" text="100" textAlignment="RIGHT" textFill="WHITE" />
+                  <Label layoutX="258.0" layoutY="7.0" text="\%" textFill="WHITE" />
+                  <AnchorPane fx:id="imageAPane" layoutY="28.0" prefHeight="589.0" prefWidth="381.0" style="-fx-background-color: #b4e5ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+                     <children>
+                        <HBox fx:id="chLFriHBProf" alignment="CENTER_LEFT" layoutX="35.0" layoutY="61.0" prefHeight="60.0" prefWidth="312.0" spacing="15.0" style="-fx-background-color: #b4e5ff;">
+                           <children>
+                              <ImageView fx:id="chLFriImgVUserPic" fitHeight="57.0" fitWidth="57.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../icons/27.%20친구/친구%2000.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="chLFriLblUserNic" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="235.0" text="User NicName">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <Button fx:id="chLFriBtnFindFri" contentDisplay="CENTER" layoutX="226.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #333333; -fx-background-radius: 10;" styleClass=".textWhite" textFill="#b2b2b2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/27-1.add_friends/add_friend02.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="chLFriBtnSettings" contentDisplay="CENTER" layoutX="290.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" styleClass=".textWhite" textFill="#b2b2b2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/exit/3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <StackPane layoutX="35.0" layoutY="127.0" prefHeight="382.0" prefWidth="312.0">
+                           <children>
+                              <ListView fx:id="chLFriListVFriend" prefHeight="377.0" prefWidth="312.0" />
+                           </children>
+                        </StackPane>
+                        <HBox alignment="CENTER" layoutY="513.0" prefHeight="70.0" prefWidth="381.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="chLFriBtn2FriList" mnemonicParsing="false" prefHeight="101.0" prefWidth="91.0" style="-fx-background-color: #333333;" styleClass=".textWhite" textFill="#b2b2b2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/27.%20친구/친구%2002.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="chLFriBtn2ChatList" mnemonicParsing="false" prefHeight="101.0" prefWidth="91.0" style="-fx-background-color: #333333;" styleClass=".textWhite" textFill="#b2b2b2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/13.%20message,%20문자%20모아보기,chatting/message%2002.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="chLFriBtnMakeGrp" mnemonicParsing="false" prefHeight="111.0" prefWidth="91.0" style="-fx-background-color: #333333;" styleClass=".textWhite" textFill="#b2b2b2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/13.%20message,%20문자%20모아보기,chatting/group_chat_maker01.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Separator layoutX="35.0" layoutY="123.0" prefHeight="4.0" prefWidth="312.0" style="-fx-background-color: #0000cd;" />
+                        <Label fx:id="chLFriLblStage" contentDisplay="RIGHT" layoutX="36.0" layoutY="13.0" prefHeight="45.0" prefWidth="190.0" text="친구">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </children>
+            </AnchorPane>
+            <RadioButton layoutX="20.0" layoutY="13.0" mnemonicParsing="false" />
+            <Button fx:id="scsBtnMusic" layoutX="332.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/14.%20music/music%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnCamera" layoutX="285.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/8.%20camera/Camera%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnVolume" layoutX="185.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/21.%20volume/volume%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnMemo" layoutX="236.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/17.%20scratch%20pad/scrach%20pad%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnWifi" layoutX="134.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/25.%20wifi/wifi%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="164.0" layoutY="661.0" text="HG" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/29.%20HG%20Logo/HG.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

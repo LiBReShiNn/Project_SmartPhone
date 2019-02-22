@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="121.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="imageAPane" layoutX="6.0" layoutY="6.0" prefHeight="403.0" prefWidth="377.0" style="-fx-background-color: #b4e5ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="h2FindBtnAddrB" layoutX="17.0" layoutY="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: #333333;" styleClass=".textWhite" text="연락처로 찾기" textFill="#b2b2b2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="h2FindBtnId" layoutX="198.0" layoutY="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: #333333;" styleClass=".textWhite" text="아이디로 찾기" textFill="#b2b2b2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

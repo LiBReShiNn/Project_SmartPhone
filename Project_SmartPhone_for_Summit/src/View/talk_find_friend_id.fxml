@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="409.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <children>
+      <AnchorPane fx:id="findIdAPane" layoutX="6.0" layoutY="6.0" prefHeight="405.0" prefWidth="390.0" style="-fx-background-color: #b4e5ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="94.0" layoutY="28.0" prefHeight="198.0" prefWidth="198.0">
+               <children>
+                  <ImageView fx:id="findFriImgVFri" fitHeight="198.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/30.%20VaTalk/vatalk.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="findFriLblState" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="233.0" prefHeight="44.0" prefWidth="303.0" text="친구의 아이디를 입력하세요">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="findFriTfId" layoutX="42.0" layoutY="277.0" prefHeight="44.0" prefWidth="248.0" promptText="    abcdef1234@xxxxx.ooo" style="-fx-background-color: #333333; -fx-border-color: #b4e5ff; -fx-background-radius: 10;" />
+            <Button fx:id="findFriBtnFindId" contentDisplay="CENTER" layoutX="289.0" layoutY="277.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #333333; -fx-background-radius: 10;" styleClass=".textWhite" textFill="#b2b2b2">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/16.%20search%20-%20find/search%2003.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="findFriBtnAddFri" layoutX="148.0" layoutY="340.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: #333333;" styleClass=".textWhite" text="추  가" textFill="#b2b2b2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

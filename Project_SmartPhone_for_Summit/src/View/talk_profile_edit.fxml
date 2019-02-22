@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="390.0" style="-fx-background-radius: 60; -fx-background-color: #E6749D; -fx-border-radius: 60;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="55.0" prefHeight="690.0" prefWidth="381.0" style="-fx-background-color: #323232;">
+         <children>
+            <AnchorPane layoutY="41.0" prefHeight="617.0" prefWidth="381.0" style="-fx-background-color: #828282;">
+               <children>
+                  <Label fx:id="fssLblTime" alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" prefHeight="27.0" prefWidth="72.0" text="00:00:00" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ProgressBar fx:id="fssProgBarBattery" layoutX="269.0" layoutY="5.0" prefHeight="18.0" prefWidth="37.0" progress="0.0" />
+                  <ImageView fx:id="fssLblStateMessage" fitHeight="18.0" fitWidth="22.0" layoutX="207.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/12.%20mail/mail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssLblStateAlret" fitHeight="18.0" fitWidth="18.0" layoutX="180.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/error/9.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssLblStateVolMuVal" fitHeight="20.0" fitWidth="20.0" layoutX="118.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/22.%20Mute/mute.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fssLblStateChat" fitHeight="20.0" fitWidth="20.0" layoutX="149.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/13.%20message,%20문자%20모아보기,chatting/message.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="3.0" layoutY="6.0" text="SKT" textFill="WHITE" />
+                  <Label fx:id="fssLblBattery" layoutX="233.0" layoutY="7.0" text="100" textAlignment="RIGHT" textFill="WHITE" />
+                  <Label layoutX="258.0" layoutY="7.0" text="\%" textFill="WHITE" />
+                  <AnchorPane fx:id="imageAPane" layoutY="28.0" prefHeight="589.0" prefWidth="381.0" style="-fx-background-color: #b4e5ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+                     <children>
+                        <Label fx:id="pfeLblState" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="466.0" prefHeight="44.0" prefWidth="303.0" text="패스워드, 닉네임을 확인하세요">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <TextField fx:id="pfeTfUserId" layoutX="39.0" layoutY="248.0" prefHeight="44.0" prefWidth="303.0" promptText="    User Id Set" style="-fx-background-color: #555555; -fx-border-color: #b4e5ff; -fx-background-radius: 10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                        <TextField fx:id="pfeTfPhNo" layoutX="39.0" layoutY="380.0" prefHeight="44.0" prefWidth="303.0" promptText="    User PhoneNo Set" style="-fx-background-color: #555555; -fx-border-color: #b4e5ff; -fx-background-radius: 10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <HBox alignment="CENTER" layoutX="78.0" layoutY="22.0" prefHeight="219.0" prefWidth="218.0">
+                           <children>
+                              <ImageView fx:id="pfeImgVUserPic" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/27.%20친구/친구%2000.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <PasswordField fx:id="pfePwfPut" layoutX="39.0" layoutY="292.0" prefHeight="44.0" prefWidth="259.0" promptText="    패스워드를 입력하세요" style="-fx-background-color: #333333; -fx-border-color: #b4e5ff; -fx-background-radius: 10;" styleClass=".textWhite">
+                           <font>
+                              <Font size="14.0" />
+                           </font></PasswordField>
+                        <PasswordField fx:id="pfePwfCheck" layoutX="39.0" layoutY="336.0" prefHeight="44.0" prefWidth="259.0" promptText="    패스워드를 다시 한번 입력하세요" style="-fx-background-color: #333333; -fx-border-color: #b4e5ff; -fx-background-radius: 10;" styleClass=".textWhite">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="pfeTfUserNic" layoutX="39.0" layoutY="423.0" prefHeight="44.0" prefWidth="259.0" promptText="    User NicName" style="-fx-background-color: #333333; -fx-border-color: #b4e5ff; -fx-background-radius: 10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="pfeBtnEdit" layoutX="96.0" layoutY="509.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: #333333;" styleClass=".textWhite" text="수 정" textFill="#b2b2b2">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button fx:id="pfeBtnExit" layoutX="193.0" layoutY="509.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: #333333;" styleClass=".textWhite" text="나가기" textFill="#b2b2b2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="pfeLblDeleteUser" layoutX="14.0" layoutY="15.0" text="탈퇴하기" />
+                        <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="299.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/26.%20프로필%20관리/프로필%20관리%2001.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="298.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/26.%20프로필%20관리/프로필%20관리%2001.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="296.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/26.%20프로필%20관리/프로필%20관리%2001.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </children>
+            </AnchorPane>
+            <RadioButton layoutX="20.0" layoutY="13.0" mnemonicParsing="false" />
+            <Button fx:id="scsBtnMusic" layoutX="332.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/14.%20music/music%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnCamera" layoutX="285.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/8.%20camera/Camera%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnVolume" layoutX="185.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/21.%20volume/volume%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnMemo" layoutX="236.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/17.%20scratch%20pad/scrach%20pad%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="scsBtnWifi" layoutX="134.0" layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #323232;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/25.%20wifi/wifi%2002.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="164.0" layoutY="661.0" text="HG" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/29.%20HG%20Logo/HG.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
